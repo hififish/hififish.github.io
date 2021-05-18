@@ -1449,7 +1449,7 @@ a {
   overflow-wrap: break-word;
 }
 a:hover {
-  color: #49b1f5;
+  color: #ffb26b;
 }
 .is-center {
   text-align: center;
@@ -3344,7 +3344,7 @@ blockquote footer cite:before {
 }
 #footer {
   position: relative;
-  background: #49b1f5;
+  background: #ffb26b;
   background-attachment: local;
   background-position: bottom;
   -webkit-background-size: cover;
@@ -4016,7 +4016,7 @@ _:future,
 #article-container.post-content h4:hover:before,
 #article-container.post-content h5:hover:before,
 #article-container.post-content h6:hover:before {
-  color: #49b1f5;
+  color: #ffb26b;
 }
 #article-container.post-content h1 {
   padding-left: 1.4rem;
@@ -4145,7 +4145,7 @@ _:future,
   position: absolute;
   top: 0;
   left: 0;
-  background: #49b1f5;
+  background: #ffb26b;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
@@ -4178,7 +4178,7 @@ _:future,
   top: 0.78em;
   width: 0.42em;
   height: 0.42em;
-  border: 0.21em solid #49b1f5;
+  border: 0.21em solid #ffb26b;
   border-radius: 0.42em;
   background: transparent;
   content: '';
@@ -4192,9 +4192,9 @@ _:future,
   margin: 0.4rem 0.4rem 0.4rem 0;
   padding: 0 0.6rem;
   width: fit-content;
-  border: 1px solid #49b1f5;
+  border: 1px solid #ffb26b;
   border-radius: 0.6rem;
-  color: #49b1f5;
+  color: #ffb26b;
   font-size: 0.85em;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -4203,7 +4203,7 @@ _:future,
   transition: all 0.2s ease-in-out;
 }
 #post .tag_share .post-meta__tags:hover {
-  background: #49b1f5;
+  background: #ffb26b;
   color: var(--white);
 }
 #post .tag_share .post_share {
@@ -4246,7 +4246,7 @@ _:future,
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
 #post .post-copyright .post-copyright-meta {
-  color: #49b1f5;
+  color: #ffb26b;
   font-weight: bold;
 }
 #post .post-copyright .post-copyright-info {
@@ -4580,7 +4580,7 @@ _:future,
   width: 75%;
 }
 #sidebar #sidebar-menus .menus_items .site-page span:hover {
-  color: #49b1f5;
+  color: #ffb26b;
 }
 #sidebar #sidebar-menus .menus_items .expand {
   position: absolute;
