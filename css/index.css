@@ -1358,6 +1358,19 @@ body {
 input::placeholder {
   color: var(--font-color);
 }
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: url(https://w.wallhaven.cc/full/95/wallhaven-956o38.png);
+  background-attachment: local;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 h1,
 h2,
 h3,
@@ -3344,7 +3357,6 @@ blockquote footer cite:before {
 }
 #footer {
   position: relative;
-  background: #ffb26b;
   background-attachment: local;
   background-position: bottom;
   -webkit-background-size: cover;
@@ -3354,7 +3366,6 @@ blockquote footer cite:before {
 #footer-wrap {
   position: relative;
   padding: 2rem 1rem;
-  color: var(--light-grey);
   text-align: center;
 }
 #footer-wrap a {
