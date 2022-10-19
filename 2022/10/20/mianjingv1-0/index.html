@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>面经总结v1.0 | Fifish's BBlog</title><meta name="keywords" content="MySQL,数据库,面经,计算机网络,操作系统"><meta name="author" content="Fifish"><meta name="copyright" content="Fifish"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="&amp;#x672C;&amp;#x535A;&amp;#x5BA2;&amp;#x5185;&amp;#x5BB9;&amp;#x6765;&amp;#x6E90;&amp;#x4E8E;&amp;#x725B;&amp;#x5BA2;&amp;#x7F51;&amp;#x6574;&amp;#x7406;&amp;#x7684;&amp;#x4ED6;&amp;#x4EBA;&amp;#x9762;&amp;#x7ECF;&amp;#x3002; OSI &amp;#x4E03;&amp;#x5C42;&amp;#x534F;&amp;#x8BAE;&amp;#x6A21;&amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面经总结v1.0">
+<meta property="og:url" content="http://example.com/2022/10/20/mianjingv1-0/index.html">
+<meta property="og:site_name" content="Fifish&#39;s BBlog">
+<meta property="og:description" content="&amp;#x672C;&amp;#x535A;&amp;#x5BA2;&amp;#x5185;&amp;#x5BB9;&amp;#x6765;&amp;#x6E90;&amp;#x4E8E;&amp;#x725B;&amp;#x5BA2;&amp;#x7F51;&amp;#x6574;&amp;#x7406;&amp;#x7684;&amp;#x4ED6;&amp;#x4EBA;&amp;#x9762;&amp;#x7ECF;&amp;#x3002; OSI &amp;#x4E03;&amp;#x5C42;&amp;#x534F;&amp;#x8BAE;&amp;#x6A21;&amp;#x">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/2.png">
+<meta property="article:published_time" content="2022-10-19T16:05:46.000Z">
+<meta property="article:modified_time" content="2022-10-19T18:29:35.314Z">
+<meta property="article:author" content="Fifish">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="数据库">
+<meta property="article:tag" content="面经">
+<meta property="article:tag" content="计算机网络">
+<meta property="article:tag" content="操作系统">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/2.png"><link rel="shortcut icon" href="/img/fish.svg"><link rel="canonical" href="http://example.com/2022/10/20/mianjingv1-0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '面经总结v1.0',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-20 02:29:35'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="/css/cursor.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/a.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">55</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/2.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Fifish's BBlog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">面经总结v1.0</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-19T16:05:46.000Z" title="发表于 2022-10-20 00:05:46">2022-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-19T18:29:35.314Z" title="更新于 2022-10-20 02:29:35">2022-10-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">837</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="面经总结v1.0"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>&#x672C;&#x535A;&#x5BA2;&#x5185;&#x5BB9;&#x6765;&#x6E90;&#x4E8E;&#x725B;&#x5BA2;&#x7F51;&#x6574;&#x7406;&#x7684;&#x4ED6;&#x4EBA;&#x9762;&#x7ECF;&#x3002;</p>
+<h1 id="OSI-&#x4E03;&#x5C42;&#x534F;&#x8BAE;&#x6A21;&#x578B;"><a href="#OSI-&#x4E03;&#x5C42;&#x534F;&#x8BAE;&#x6A21;&#x578B;" class="headerlink" title="OSI &#x4E03;&#x5C42;&#x534F;&#x8BAE;&#x6A21;&#x578B;"></a>OSI &#x4E03;&#x5C42;&#x534F;&#x8BAE;&#x6A21;&#x578B;</h1><p>&#x5F00;&#x653E;&#x5F0F;&#x7CFB;&#x7EDF;&#x4E92;&#x8054;&#x901A;&#x4FE1;&#x53C2;&#x8003;&#x6A21;&#x578B;&#xFF08;<em>Open System Interconnection Reference Model</em>&#xFF0C;&#x7F29;&#x5199;&#x4E3A; OSI&#xFF09;&#xFF0C;&#x7B80;&#x79F0;&#x4E3A;OSI&#x6A21;&#x578B;&#xFF08;OSI <em>model</em>&#xFF09;&#xFF0C;&#x4E00;&#x79CD;&#x6982;&#x5FF5;&#x6A21;&#x578B;&#xFF0C;&#x7531;&#x56FD;&#x9645;&#x6807;&#x51C6;&#x5316;&#x7EC4;&#x7EC7;&#x63D0;&#x51FA;&#xFF0C;&#x4E00;&#x4E2A;&#x8BD5;&#x56FE;&#x4F7F;&#x5404;&#x79CD;&#x8BA1;&#x7B97;&#x673A;&#x5728;&#x4E16;&#x754C;&#x8303;&#x56F4;&#x5185;&#x4E92;&#x8FDE;&#x4E3A;&#x7F51;&#x7EDC;&#x7684;&#x6807;&#x51C6;&#x6846;&#x67B6;&#x3002;</p>
+<p>&#x5B83;&#x5C06;&#x8BA1;&#x7B97;&#x673A;&#x2F79;&#x7EDC;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x5212;&#x5206;&#x4E3A;7&#x5C42;&#xFF0C;&#x6BCF;&#x5C42;&#x90FD;&#x4E3A;&#x4E0A;&#x2F00;&#x5C42;&#x63D0;&#x4F9B;&#x4E86;&#x826F;&#x597D;&#x7684;&#x63A5;&#x2F1D;&#x3002;</p>
+<h2 id="&#x5206;&#x5C42;&#x7ED3;&#x6784;"><a href="#&#x5206;&#x5C42;&#x7ED3;&#x6784;" class="headerlink" title="&#x5206;&#x5C42;&#x7ED3;&#x6784;"></a>&#x5206;&#x5C42;&#x7ED3;&#x6784;</h2><p>&#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x4E03;&#x5C42;&#xFF08;&#x4ECE;&#x4E0B;&#x2F84;&#x4E0A;&#xFF09;&#xFF1A;&#x7269;&#x7406;&#x5C42;&#x3001;&#x6570;&#x636E;&#x94FE;&#x8DEF;&#x5C42;&#x3001;&#x2F79;&#x7EDC;&#x5C42;&#x3001;&#x4F20;&#x8F93;&#x5C42;&#x3001;&#x4F1A;&#x8BDD;&#x5C42;&#x3001;&#x8868;&#x793A;&#x5C42;&#x3001;&#x5E94;&#x2F64;&#x5C42;&#x3002;</p>
+<ul>
+<li><p>&#x7269;&#x7406;&#x5C42;&#xFF08;&#x6BD4;&#x7279;&#xFF09;&#xFF1A;<u>&#x5728;&#x7269;&#x7406;&#x5A92;&#x4F53;&#x4E0A;&#x4E3A;&#x6570;&#x636E;&#x7AEF;&#x8BBE;&#x5907;&#x900F;&#x660E;&#x5730;&#x4F20;&#x8F93;&#x539F;&#x59CB;&#x6BD4;&#x7279;&#x6D41;</u>&#xFF1B;&#x4E3B;&#x8981;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x7EC8;&#x7AEF;&#x8BBE;&#x5907;&#x548C;&#x6570;&#x636E;&#x901A;&#x4FE1;&#x8BBE;&#x5907;&#x7684;&#x7269;&#x7406;&#x4E0E;&#x903B;&#x8F91;&#x8FDE;&#x63A5;&#x65B9;&#x6CD5;&#x3002;IEEE 802.1A&#x3001;IEEE 802.2</p>
+</li>
+<li><p>&#x6570;&#x636E;&#x94FE;&#x8DEF;&#x5C42;&#xFF08;&#x5E27;&#xFF09;&#xFF1A;<u>&#x63A5;&#x6536;&#x6765;&#x81EA;&#x7269;&#x7406;&#x5C42;&#x7684; bit &#x6D41;&#x5C01;&#x88C5;&#x6210;&#x5E27;&#xFF0C;&#x5C06;&#x7F51;&#x7EDC;&#x5C42;&#x4F20;&#x6765;&#x7684;IP&#x6570;&#x636E;&#x7EC4;&#x88C5;&#x6210;&#x5E27;</u>&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x5DEE;&#x9519;&#x63A7;&#x5236;&#x3001;&#x6D41;&#x91CF;&#x63A7;&#x5236;&#x3001;&#x4F20;&#x8F93;&#x7BA1;&#x7406;&#x7B49;&#x3002;ARP&#x3001;MAC&#x3001; FDDI&#x3001;Ethernet&#x3001;Arpanet&#x3001;PPP&#x3001;PDN</p>
+</li>
+<li><p>&#x7F51;&#x7EDC;&#x5C42;&#xFF08;&#x6570;&#x636E;&#x62A5;&#xFF0C;packet&#xFF09;&#xFF1A;<u>&#x8D1F;&#x8D23;&#x5BF9;&#x901A;&#x4FE1;&#x5B50;&#x7F51;&#x95F4;&#x7684;&#x6570;&#x636E;&#x5305;&#x8FDB;&#x884C;&#x8DEF;&#x7531;&#x9009;&#x62E9;</u>&#xFF0C;&#x5B9E;&#x73B0;&#x6D41;&#x91CF;&#x63A7;&#x5236;&#x3001;&#x62E5;&#x585E;&#x63A7;&#x5236;&#x3001;&#x5DEE;&#x9519;&#x63A7;&#x5236;&#x548C;&#x7F51;&#x9645;&#x4E92;&#x8FDE;&#x7B49;&#x529F;&#x80FD;&#x3002;&#xFF08;&#x628A;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x534F;&#x8BAE;&#x6570;&#x636E;&#x5355;&#x5143;&#xFF08;&#x5206;&#x7EC4;&#xFF09;&#x4ECE;&#x6E90;&#x7AEF;&#x4F20;&#x5230;&#x76EE;&#x7684;&#x7AEF;&#xFF0C;&#x4E3A;&#x5206;&#x7EC4;&#x4EA4;&#x6362;&#x7F51;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x4E3B;&#x673A;&#x63D0;&#x4F9B;&#x901A;&#x4FE1;&#x670D;&#x52A1;&#x3002;&#xFF09;IP&#x3001;ICMP&#x3001;ARP&#x3001;RARP</p>
+</li>
+<li><p>&#x4F20;&#x8F93;&#x5C42;&#xFF08;&#x6570;&#x636E;&#x6BB5;segment&#xFF1A;&#x62A5;&#x6587;&#x6BB5;TCP&#xFF0C;&#x7528;&#x6237;&#x6570;&#x636E;&#x62A5;UDP&#xFF09;<u>&#x8D1F;&#x8D23;&#x4E3B;&#x673A;&#x4E2D;&#x4E24;&#x4E2A;&#x8FDB;&#x7A0B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#xFF0C;&#x4E3A;&#x7AEF;&#x5230;&#x7AEF;&#x8FDE;&#x63A5;&#x63D0;&#x4F9B;&#x53EF;&#x9760;&#x7684;&#x4F20;&#x8F93;&#x670D;&#x52A1;</u>&#xFF0C;&#x63D0;&#x4F9B;&#x6D41;&#x91CF;&#x63A7;&#x5236;&#x3001;&#x5DEE;&#x9519;&#x63A7;&#x5236;&#x3001;&#x670D;&#x52A1;&#x8D28;&#x91CF;&#x3001;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x7BA1;&#x7406;&#x7B49;&#x670D;&#x52A1;&#x3002;TCP&#x3001;UDP</p>
+</li>
+<li><p>&#x4F1A;&#x8BDD;&#x5C42;&#xFF1A;<u>&#x7BA1;&#x7406;&#x4E3B;&#x673A;&#x4E4B;&#x95F4;&#x7684;&#x4F1A;&#x8BDD;&#x8FDB;&#x7A0B;&#xFF0C;&#x5373;&#x8D1F;&#x8D23;&#x5EFA;&#x2F74;&#x3001;&#x7BA1;&#x7406;&#x3001;&#x7EC8;&#x2F4C;&#x8FDB;&#x7A0B;&#x4E4B;&#x95F4;&#x7684;&#x4F1A;&#x8BDD;</u>&#x3002;SMTP&#x3001;DNS</p>
+<p>&#x4F1A;&#x8BDD;&#x5C42;&#x8FD8;&#x5229;&#x7528;&#x5728;&#x6570;&#x636E;&#x4E2D;&#x63D2;&#x5165;&#x6821;&#x9A8C;&#x70B9;&#x6765;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x7684;&#x540C;&#x6B65;&#xFF0C;&#x8BBF;&#x95EE;&#x9A8C;&#x8BC1;&#x548C;&#x4F1A;&#x8BDD;&#x7BA1;&#x7406;&#x5728;&#x5185;&#x7684;&#x5EFA;&#x7ACB;&#x548C;&#x7EF4;&#x62A4;&#x5E94;&#x7528;&#x4E4B;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x673A;&#x5236;&#x3002;&#x5982;&#x670D;&#x52A1;&#x5668;&#x9A8C;&#x8BC1;&#x7528;&#x6237;&#x767B;&#x5F55;&#x4FBF;&#x662F;&#x7531;&#x4F1A;&#x8BDD;&#x5C42;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x4F7F;&#x901A;&#x4FE1;&#x4F1A;&#x8BDD;&#x5728;&#x901A;&#x4FE1;&#x5931;&#x6548;&#x65F6;&#x4ECE;&#x6821;&#x9A8C;&#x70B9;&#x7EE7;&#x7EED;&#x6062;&#x590D;&#x901A;&#x4FE1;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#x5EFA;&#x7ACB;&#x4F1A;&#x8BDD;&#xFF0C;&#x5982; session &#x8BA4;&#x8BC1;&#x3001;&#x65AD;&#x70B9;&#x7EED;&#x4F20;&#x3002;</p>
+</li>
+<li><p>&#x8868;&#x793A;&#x5C42;&#xFF1A;<u>&#x5904;&#x7406;&#x5728;&#x4E24;&#x4E2A;&#x901A;&#x4FE1;&#x7CFB;&#x7EDF;&#x4E2D;&#x4EA4;&#x6362;&#x4FE1;&#x606F;&#x7684;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#x3002;</u>&#x63D0;&#x4F9B;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x8868;&#x793A;&#x548C;&#x8F6C;&#x6362;&#x6570;&#x636E;&#x670D;&#x52A1;&#xFF0C;&#x5C06;&#x51C6;&#x5907;&#x4EA4;&#x6362;&#x7684;&#x6570;&#x636E;&#x4ECE;&#x9002;&#x5408;&#x4E8E;&#x67D0;&#x2F00;&#x2F64;&#x6237;&#x7684;&#x62BD;&#x8C61;&#x8BED;&#x6CD5;&#xFF0C;&#x8F6C;&#x6362;&#x4E3A;&#x9002;&#x5408;&#x4E8E;OSI&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x4F7F;&#x2F64;&#x7684;&#x4F20;&#x9001;&#x8BED;&#x6CD5;&#x3002;<u>&#x6570;&#x636E;&#x7684;&#x538B;&#x7F29;&#x548C;&#x89E3;&#x538B;&#x7F29;</u>&#xFF0C; <u>&#x52A0;&#x5BC6;&#x548C;&#x89E3;&#x5BC6;</u>&#x7B49;&#x2F2F;&#x4F5C;&#x90FD;&#x7531;&#x8868;&#x793A;&#x5C42;&#x8D1F;&#x8D23;&#xFF0C;&#x2F50;&#x5982;&#x8BF4;&#x56FE;&#x50CF;&#x3001;&#x89C6;&#x9891;&#x7F16;&#x7801;&#x89E3;&#xFF0C;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x3002;Telnet&#x3001;SNMP</p>
+</li>
+<li><p>&#x5E94;&#x7528;&#x5C42;&#xFF1A;<u>&#x4E3A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6216;&#x7F51;&#x7EDC;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x7684;&#x63A5;&#x53E3;</u>&#x3002;FTP&#x3001;TFTP&#x3001;Telnet&#x3001;HTTP&#x3001;DNS</p>
+</li>
+</ul>
+<h1 id="&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x3001;&#x56DB;&#x6B21;&#x6325;&#x624B;"><a href="#&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x3001;&#x56DB;&#x6B21;&#x6325;&#x624B;" class="headerlink" title="&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x3001;&#x56DB;&#x6B21;&#x6325;&#x624B;"></a>&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x3001;&#x56DB;&#x6B21;&#x6325;&#x624B;</h1></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Fifish</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/10/20/mianjingv1-0/">http://example.com/2022/10/20/mianjingv1-0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Fifish's BBlog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/MySQL/">MySQL</a><a class="post-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><a class="post-meta__tags" href="/tags/%E9%9D%A2%E7%BB%8F/">面经</a><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><a class="post-meta__tags" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></div><div class="post_share"><div class="social-share" data-image="/img/2.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/10/16/cplusplus/"><img class="next-cover" src="/img/2.png" onerror="onerror=null;src='/img/404-1.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">C++知识点</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/10/10/Mysql/" title="MySQL常用语句"><img class="cover" src="/img/2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-10</div><div class="title">MySQL常用语句</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/a.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Fifish</div><div class="author-info__description">快乐最重要</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">55</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hififish"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">你发现这里啦！✧(≖ ◡ ≖✿)</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OSI-&#x4E03;&#x5C42;&#x534F;&#x8BAE;&#x6A21;&#x578B;"><span class="toc-number">1.</span> <span class="toc-text">OSI &amp;#x4E03;&amp;#x5C42;&amp;#x534F;&amp;#x8BAE;&amp;#x6A21;&amp;#x578B;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#&#x5206;&#x5C42;&#x7ED3;&#x6784;"><span class="toc-number">1.1.</span> <span class="toc-text">&amp;#x5206;&amp;#x5C42;&amp;#x7ED3;&amp;#x6784;</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x3001;&#x56DB;&#x6B21;&#x6325;&#x624B;"><span class="toc-number">2.</span> <span class="toc-text">&amp;#x4E09;&amp;#x6B21;&amp;#x63E1;&amp;#x624B;&amp;#x3001;&amp;#x56DB;&amp;#x6B21;&amp;#x6325;&amp;#x624B;</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/20/mianjingv1-0/" title="面经总结v1.0"><img src="/img/2.png" onerror="this.onerror=null;this.src='/img/404-1.jpg'" alt="面经总结v1.0"/></a><div class="content"><a class="title" href="/2022/10/20/mianjingv1-0/" title="面经总结v1.0">面经总结v1.0</a><time datetime="2022-10-19T16:05:46.000Z" title="发表于 2022-10-20 00:05:46">2022-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/16/cplusplus/" title="C++知识点"><img src="/img/2.png" onerror="this.onerror=null;this.src='/img/404-1.jpg'" alt="C++知识点"/></a><div class="content"><a class="title" href="/2022/10/16/cplusplus/" title="C++知识点">C++知识点</a><time datetime="2022-10-16T08:19:38.000Z" title="发表于 2022-10-16 16:19:38">2022-10-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/Mysql/" title="MySQL常用语句"><img src="/img/2.png" onerror="this.onerror=null;this.src='/img/404-1.jpg'" alt="MySQL常用语句"/></a><div class="content"><a class="title" href="/2022/10/10/Mysql/" title="MySQL常用语句">MySQL常用语句</a><time datetime="2022-10-10T07:40:50.000Z" title="发表于 2022-10-10 15:40:50">2022-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/12/2022-2/" title="2月的BBlog in 2022"><img src="/img/2022-2.png" onerror="this.onerror=null;this.src='/img/404-1.jpg'" alt="2月的BBlog in 2022"/></a><div class="content"><a class="title" href="/2022/02/12/2022-2/" title="2月的BBlog in 2022">2月的BBlog in 2022</a><time datetime="2022-02-12T11:31:39.000Z" title="发表于 2022-02-12 19:31:39">2022-02-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/01/12-AADL/" title="关于AADL在航电软件这块的应用"><img src="/img/2.png" onerror="this.onerror=null;this.src='/img/404-1.jpg'" alt="关于AADL在航电软件这块的应用"/></a><div class="content"><a class="title" href="/2021/12/01/12-AADL/" title="关于AADL在航电软件这块的应用">关于AADL在航电软件这块的应用</a><time datetime="2021-12-01T08:28:08.000Z" title="发表于 2021-12-01 16:28:08">2021-12-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 <i style="color:#FF6A6A" class="fa fa-heartbeat"></i>Fifish</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/title.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="（づ￣3￣）づ╭❤～,(✿◡‿◡),◐▽◑,Hi~,o(〃'▽'〃)o" data-fontsize="15px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start -->
+  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?hififish";
+            var git_color =['#ebedf0', '#ffcab0',  '#ffa07a', '#ff8c69', '#ff8c69', '#ee8262', '#ee8262', '#cd7054', '#cd7054', '#8b4c39', '#8b4c39'];
+            var git_user ="hififish";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body></html>
